@@ -10,9 +10,16 @@ public class ArraySearch {
             num[i] = i;
         }
 
-        
-        for (int i = 0; i < num.length; i++) {
-            System.out.println(num[i]);
+        int term = 3;
+        for (int i = 0; i <= num.length; i++) {
+
+
+            if (i == num.length) {
+                System.out.println("Not exists!");
+                break;
+            } else if (num[i] == term) {
+                System.out.println("Exists at key " + i);
+            }
         }
     }
 }
